@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="A responsive temperature converter supporting Celsius, Fahrenheit, and Kelvin.">
+
+    <title>Temperature Converter | Letera Geleta</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <p class="eyebrow">WEB DEVELOPMENT · OASIS INFOBYTE</p>
+
+            <h1>
+                Temperature
+                <span>Converter</span>
+            </h1>
+
+            <p class="subtitle">
+                Convert temperatures quickly and accurately between
+                Celsius, Fahrenheit, and Kelvin.
+            </p>
+        </header>
+
+
+        <!-- Converter Card -->
+        <section class="converter-card">
+
+            <div class="input-group">
+
+                <label for="temperature">
+                    Temperature
+                </label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter temperature"
+                    step="any"
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="unit">
+                    Convert from
+                </label>
+
+                <select id="unit">
+
+                    <option value="celsius">
+                        Celsius (°C)
+                    </option>
+
+                    <option value="fahrenheit">
+                        Fahrenheit (°F)
+                    </option>
+
+                    <option value="kelvin">
+                        Kelvin (K)
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="actions">
+
+                <button id="convertBtn" class="convert-btn">
+                    Convert
+                    <span>→</span>
+                </button>
+
+                <button id="resetBtn" class="reset-btn">
+                    Reset
+                </button>
+
+            </div>
+
+
+            <!-- Error Message -->
+            <div id="errorMessage" class="error-message"></div>
+
+
+            <!-- Results -->
+            <div id="results" class="results">
+
+                <div class="result-card">
+
+                    <span class="result-label">
+                        Celsius
+                    </span>
+
+                    <strong id="celsiusResult">
+                        —
+                    </strong>
+
+                    <span class="unit-symbol">
+                        °C
+                    </span>
+
+                </div>
+
+
+                <div class="result-card">
+
+                    <span class="result-label">
+                        Fahrenheit
+                    </span>
+
+                    <strong id="fahrenheitResult">
+                        —
+                    </strong>
+
+                    <span class="unit-symbol">
+                        °F
+                    </span>
+
+                </div>
+
+
+                <div class="result-card">
+
+                    <span class="result-label">
+                        Kelvin
+                    </span>
+
+                    <strong id="kelvinResult">
+                        —
+                    </strong>
+
+                    <span class="unit-symbol">
+                        K
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Information -->
+        <section class="info-section">
+
+            <div class="info-card">
+
+                <span class="info-number">
+                    01
+                </span>
+
+                <div>
+                    <h2>
+                        Celsius
+                    </h2>
+
+                    <p>
+                        The Celsius scale is commonly used around
+                        the world for everyday temperature measurements.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span class="info-number">
+                    02
+                </span>
+
+                <div>
+                    <h2>
+                        Fahrenheit
+                    </h2>
+
+                    <p>
+                        Fahrenheit is primarily used for everyday
+                        temperature measurements in the United States.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span class="info-number">
+                    03
+                </span>
+
+                <div>
+                    <h2>
+                        Kelvin
+                    </h2>
+
+                    <p>
+                        Kelvin is an absolute temperature scale commonly
+                        used in science and engineering.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                Designed & built by
+                <strong>Letera Geleta</strong>
+            </p>
+
+            <p>
+                OASIS INFOBYTE · Web Development Level 1 · Task 3
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
